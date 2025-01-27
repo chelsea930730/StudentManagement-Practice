@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class StudentManagementApp {
     public static void main(String[] args) {
-        StudentRepositoryImpl repository = new StudentRepositoryImpl();
+        StudentRepository repository = new StudentRepositoryImpl();
         StudentView view = new StudentView();
         StudentController controller = new StudentController(repository, view);
 
