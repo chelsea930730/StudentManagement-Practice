@@ -13,19 +13,17 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     @Override
     public Student findById(int id) {
-//    	Student student = null;
-//    	for (int i = 0; i < students.size(); i++) {
-//    		student = students.get(i);
-//    		if (student.getId() == id) {
-//    			return student;
+//    	for(int i=0; i< students.size(); i++) {
+//    		if (students.get(i).getId() ==id) {
+//    			return students.get(i);
 //    		}
 //    	}
     	
-    	for (Student student : students) {
-    		if (student.getId() == id) {
+    	for( Student student : students) {
+    		if(student.getId()==id) {
     			return student;
+    			}
     		}
-    	}
     	    	
     	return null;
     }
